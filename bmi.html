@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="BMI AJAX ">
+  <meta name="keywords" content="BMI, AJAX">
+  <meta name="author" content="Patrick Homburg">
+  <link rel="stylesheet" href="bmi.css">
+  <link rel="icon" href="logo.jpg">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+
+  <div class="totaal">
+
+
+
+    <main>
+
+      <div id="vraag">
+        <!--Subtitle-->
+        <h2>Bereken mijn <span class="color">BMI</span></h2>
+        <div id="input">
+          <!--Geslacht-->
+          <div class="border">
+            <div class="iGeslacht">
+              Geslacht
+            </div>
+            <div class="styled-select">
+              <select name="geslacht" required>
+                <option value="" disabled selected>Man</options>
+                <option value="Man">Man</option>
+                <option value="Vrouw">Vrouw</option>
+              </select>
+            </div>
+          </div>
+          <!--Leeftijd-->
+          <div class="border">
+            <div class="iLeeftijd">
+              Leeftijd
+            </div>
+            <input type="number" size="20" id="leeftijd" placeholder="Uw leeftijd">
+          </div>
+          <!--Gewicht-->
+          <div class="border">
+            <div class="iGewicht">
+              Gewicht
+            </div>
+            <input type="number" size="20" id="gewicht" placeholder="Uw gewicht in kg">
+          </div>
+          <!--Lengte-->
+          <div class="border">
+            <div class="iLengte">
+              Lengte
+            </div>
+            <input type="number" size="20" id="lengte" placeholder="Uw lengte in cm">
+          </div>
+        </div>
+        <!--Button-->
+        <div class="knop">
+          <button type="button" id="button">Bereken mijn BMI &raquo;</button>
+        </div>
+        <div id="resultaat"></div>
+
+    </main>
+
+  </div>
+
+  <script src="ajax.js"></script>
+
+</body>
+</html>
